@@ -2,5 +2,8 @@
 
 Ext.define('StsGlry.model.Folder', {
   extend: 'Ext.data.Model',
-  fields: ['id', 'name', 'played_date']
+  fields: [
+           { name:'id', type: 'string' },
+           { name:'text', type: 'string' }
+          ]
 });

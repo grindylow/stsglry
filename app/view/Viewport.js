@@ -13,32 +13,8 @@ Ext.define('StsGlry.view.Viewport', {
 	      collapsible: true, /* can collapse (funny little arrow) */
 	      xtype: 'treepanel',
 	      width: 150,
-	      height: 150,
-	      root: {
-	       text: 'Gallery Root',
-		expanded: true,
-		children: [
-			   {
-			   text: 'Child 1',
-			   leaf: false
-			   },
-			   {
-			   text: 'Child 2',
-			   leaf: true
-			   },
-			   {
-			   text: 'Child 3',
-			   expanded: true,
-			   children: [
-				      {
-				      text: 'Grandchild',
-				      leaf: true
-				      }
-				     ]
-			   }
-			  ]
-		}
-	    
+		  height: 150,
+		  store: 'MyFolderStore'
 	  }
   ]
 });

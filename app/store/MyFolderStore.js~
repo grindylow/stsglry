@@ -1,0 +1,19 @@
+// A MyFolderStore stores many Folders, eventually
+// this store will be populated by the server.
+// Right now, we're simply loading static data.
+
+Ext.define('StsGlry.store.MyFolderStore', {
+  extend: 'Ext.data.Store',
+  requires: 'StsGlry.model.Folder',
+  model: 'StsGlry.model.Folder',
+
+  // Overriding the model's default proxy
+  proxy: {
+    type: 'ajax',
+    url: 'data/retrievefolders.json',
+    reader: {
+      type: 'json',
+      root: 'results'
+    }
+  }
+});
