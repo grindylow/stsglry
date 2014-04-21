@@ -1,0 +1,36 @@
+{
+    "success": true,
+    "results": [ 
+	       {
+	        text: "What I loaded...",
+		id: "/simple/path",
+		//expanded: true,
+		//		loaded: true,
+	        children: [
+
+	       {
+	       //id: 123,
+	       text: 'Child 1 Json',
+		   leaf: true
+	       },
+	       {
+	       //id: 124,
+	       text: 'Open me Json',
+	       leaf: true
+	       },
+	       {
+	       //id: 125,
+	       text: 'Child 2 Json',
+		   leaf: true
+	       }
+	       ]
+	       },
+
+	       {
+	        text: "Another entry",
+		expanded: false
+	       }
+
+	       ]
+}
+
