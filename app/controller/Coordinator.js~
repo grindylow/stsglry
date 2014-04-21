@@ -1,0 +1,6 @@
+Ext.define('StsGlry.controller.Coordinator', {
+	extend: 'Ext.app.Controller',
+	    init: function() {
+	    //....
+	}
+    });
