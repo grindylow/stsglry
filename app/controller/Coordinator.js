@@ -25,7 +25,10 @@ Ext.define('StsGlry.controller.Coordinator', {
 	//alert("this.onItemClick()!"+record.data.id);
 	console.log(view);
 	console.log(record);
-	// @todo Tell our File View about the changed folder
+	// Tell our File View about the changed folder
+	// we do this by telling the proxy responsibel
+	// for loading our model's data:
+	this.getMyImageStoreStore().getProxy().setExtraParam('path',record.data.id);
 	this.getMyImageStoreStore().load({
 	    scope: this,
 	    callback: function(records, operation, success) {
