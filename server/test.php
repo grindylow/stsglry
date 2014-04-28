@@ -1,4 +1,5 @@
 <?php
+phpinfo();
   // return all (accessible) subfolders of the given folder
 $dir="test";
 //if($_GET("node")===null) $dir="."; else $dir=$_GET("node");

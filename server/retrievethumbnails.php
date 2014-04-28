@@ -38,7 +38,7 @@ foreach( $allfiles as $key => $value )
   //print( "<br/>" );
   if(is_file($potential_file))
     {
-      $r[] = array( "src"=>"server/thumb.php?" . $potential_file, // @todo URLencode? Maybe not - done by javascript later on...
+      $r[] = array( "src"=>"server/thumb.php?thumb=" . rawurlencode($potential_file),
 		    "caption"=>$value);
     }
 }
