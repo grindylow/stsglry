@@ -12,7 +12,10 @@ Ext.define('StsGlry.controller.Coordinator', {
     init: function() {
 	this.control({
 	    'treepanel': { 
-		itemclick: this.onItemClick
+		itemclick: this.onFolderClick
+	    },
+	    'xmythumbnails': {
+		itemdblclick: this.onThumbnailDblClick
 	    }
 	});
     },
@@ -21,7 +24,13 @@ Ext.define('StsGlry.controller.Coordinator', {
 	this.getThumbnailView().refresh();
     },
 
-    onItemClick: function(view, record, item, index, e, eOpts) {
+    onThumbnailDblClick: function(view, record, item, index, e, eOpts) {
+	alert("this.onItemClick()!"+record.data.id);
+	console.log(view);
+	console.log(record);
+    },
+
+    onFolderClick: function(view, record, item, index, e, eOpts) {
 	//alert("this.onItemClick()!"+record.data.id);
 	console.log(view);
 	console.log(record);
